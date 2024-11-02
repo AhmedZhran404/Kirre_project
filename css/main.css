@@ -242,7 +242,7 @@ a {
 /* ***================ start Style contact ==========*** */
 
 .contact .form button {
-    padding: 20px 35px;
+    padding: 15px 25px;
     color: #fff;
     background-color: var(--main-color);
     border: unset;
@@ -310,5 +310,6 @@ a {
 }
 
 /* ***================ End Style setting ==========*** */
+
 
 

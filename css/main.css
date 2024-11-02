@@ -1,0 +1,314 @@
+/***** ============== start global style ========== *****/
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-color: #E65F78;
+    --main-color-light: #F8F9FA;
+    --footer-color-section: #212121;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+.bg-main-color {
+    background-color: var(--main-color);
+}
+.main-color-light {
+    color: var(--main-color-light);
+}
+.bg-main-color-light  {
+    background-color: var(--main-color-light);
+}
+
+.p-section {
+    padding: 70px 0;
+}
+
+
+/**** ============== End global style ===========****/
+
+/**** ============== start Navbar style =============****/
+
+.my-nav {
+    background-color: #fff ;
+}
+.my-nav .nav-item .nav-link {
+    color: #000;
+    transition: color 0.5s;
+}
+
+.my-nav .nav-item .nav-link.active {
+    color: var(--main-color);
+}
+
+.my-nav .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+
+
+/**** ============== End Navbar style =============****/
+
+/* ***=============== Start Style Home ============*** */
+.home {
+    background-image: linear-gradient(rgba(0,0,0,0.623) , rgba(0,0,0,0.623)) , url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.home .content-header {
+    color: #fff;
+}
+
+.home .container .content-header h1 {
+    font-size: 60px;
+    line-height: 72px;
+}
+.home .container .content-header .header-btn {
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.home .container .content-header .header-btn:hover {
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    /* position: relative; */
+}
+
+.home .container .content-header .icon-animation {
+    width: 50px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 80%;
+    left: 49%;
+}
+
+.home .container .content-header .icon-animation .inner {
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+
+
+/* ***=============== End Style Home ============*** */
+
+/* ***================ Start Style About ==========*** */
+
+.about .icon-social-media {
+    column-gap: 10px;
+}
+.about .icon-social-media span{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #dddada;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;;
+}
+.about .icon-social-media span:hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* ***================ End Style About ==========*** */
+/* ***================ start Style Services ==========*** */
+
+.services {
+    background-color: var(--main-color-light);
+}
+
+.services .card-body h4::after {
+    content: '';
+    background-color: var(--main-color);
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ***================ End Style Services ==========*** */
+
+/* ***================ start Style freelancer ==========*** */
+
+.freelancer .contact-me button {
+    border: unset;
+    padding: 10px 30px;
+    color: #fff;
+}
+/* ***================ End Style freelancer ==========*** */
+
+/* ***================ start Style client ==========*** */
+
+.client .container .carousel   img{
+    width: 100px;
+    border-radius: 50%;
+}
+.client .container .carousel .carousel-inner .carousel-item p {
+    font-size: 1rem;
+}
+.client .container .carousel .carousel-inner .carousel-item h5 {
+    font-size: 0.8rem;
+}
+.client .carousel .carousel-indicators [data-bs-target="#carouselExampleCaptions"] {
+    width: 15px;
+    background-color: var(--main-color);
+}
+
+.client .carousel .carousel-indicators [data-bs-target="#carouselExampleCaptions"].active {
+    width: 24px;
+    background-color: var(--main-color);
+}
+
+/* ***================ End Style client ==========*** */
+
+/* ***================ start Style protfolio ==========*** */
+
+.protfolio .list-nav-and-taps .nav .nav-link {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: unset;
+}
+
+.protfolio .list-nav-and-taps .nav .nav-link.active {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+.protfolio .tab-content .tab-pane .picture {
+    overflow: hidden;
+}
+.protfolio .tab-content .tab-pane .picture .picture-layer {
+    background-color: rgba(0, 0, 0, 0.523);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.protfolio .tab-content .tab-pane .picture:hover .picture-layer {
+
+    opacity: 1;
+}
+
+.protfolio .tab-content .tab-pane .picture .picture-layer .caption-layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    transition: top 0.5s;
+}
+
+.protfolio .tab-content .tab-pane .picture:hover .caption-layer {
+    top: 50%;
+}
+
+
+/* ***================ End Style protfolio ==========*** */
+/* ***================ start Style contact ==========*** */
+
+.contact .form button {
+    padding: 20px 35px;
+    color: #fff;
+    background-color: var(--main-color);
+    border: unset;
+}
+
+/* ***================ End Style contact ==========*** */
+
+/* ***================ start Style footer ==========*** */
+
+.footer {
+    background-color: var(--footer-color-section);
+}
+.footer .social-media-icons div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social-media-icons i {
+    color: #fff;
+    transition: color 0.5s;
+}
+.footer .content-footer p {
+    color: #909090;
+    margin: 0;
+}
+.footer .social-media-icons div:hover i {
+    color: var(--main-color);
+}
+/* ***================ End Style footer ==========*** */
+
+/* ***================ start Style arrow-top ==========*** */
+.spicial-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+}
+/* ***================ End Style arrow-top ==========*** */
+
+/* ***================ start Style setting ==========*** */
+.setting {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* ***================ End Style setting ==========*** */
+
+
